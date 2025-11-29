@@ -1,15 +1,9 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "webhook_activator.py",
-      "use": "@vercel/python"
-    }
-  ],
+  "version": 3,
   "routes": [
     {
       "src": "/stripe-webhook",
-      "dest": "/webhook_activator.py"
+      "dest": "/api/webhook_activator.py"
     }
   ]
 }
